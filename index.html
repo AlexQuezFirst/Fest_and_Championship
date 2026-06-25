@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Летний фестиваль аргентинского танго и Чемпионат Dance Life. Пермь, 31 июля – 2 августа 2026.">
+  <meta name="keywords" content="аргентинское танго, танго Пермь, чемпионат танго, фестиваль танго, Dance Life, танго не за горами">
+  <title>Танго не за горами 2026 | Чемпионат по аргентинскому танго</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Главный экран">
+      <picture class="hero-bg" aria-hidden="true">
+        <source media="(max-width: 768px)" srcset="первый экран для смартфонов.jpg">
+        <img src="reference-hero.jpg" alt="">
+      </picture>
+      <div class="hero-overlay"></div>
+
+      <header class="site-header" id="top">
+        <div class="header-inner">
+          <a href="#top" class="logo" aria-label="Dance Life — на главную">
+            <img src="Dance life лого белый.jpg" class="logo-img" alt="Dance Life — школа танцев">
+          </a>
+
+          <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+            <ul>
+              <li><a href="#about-festival">О Фестивале</a></li>
+              <li><a href="#about-championship">О Чемпионате</a></li>
+              <li><a href="#categories">Категории</a></li>
+              <li><a href="#prices">Стоимость</a></li>
+              <li><a href="#program">Программа</a></li>
+              <li><a href="#regulations">Положение о Чемпионате</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="hero-bottom">
+        <a
+          class="btn btn-register"
+          href="https://forms.gle/R75rjsPV8vXUbq639"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <div class="countdown" aria-live="polite">
+          <p class="countdown-label">ДО НАЧАЛА ФЕСТИВАЛЯ И ЧЕМПИОНАТА ОСТАЛОСЬ</p>
+          <div class="countdown-grid">
+            <div class="countdown-item">
+              <span class="countdown-value" id="cd-days">0</span>
+              <span class="countdown-unit">дней</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="cd-hours">0</span>
+              <span class="countdown-unit">часов</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="cd-minutes">0</span>
+              <span class="countdown-unit">минут</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="cd-seconds">0</span>
+              <span class="countdown-unit">секунд</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О Фестивале -->
+    <section class="section" id="about-festival">
+      <div class="container">
+        <h2 class="section-title">О Фестивале</h2>
+        <div class="section-grid section-grid--reverse">
+          <div class="section-text">
+            <p>Как долго вы ждали этого момента?<br>Сколько времени готовились к нему?</p>
+            <p>31 июля паркет Dance Life станет местом, где эмоции будут сильнее слов, а каждый выход участников — это история, рассказанная в объятии.</p>
+            <p>На Фестивале в качестве преподавателей, судей и партнёров будут присутствовать уже известные и зарекомендовавшие себя танцоры из Аргентины и России.</p>
+          </div>
+          <div class="section-media">
+            <!-- TODO: фото для блока «О Фестивале» — файл не указан в content.md -->
+          </div>
+        </div>
+
+        <div class="teachers">
+          <h3 class="subsection-title">Преподаватели</h3>
+          <div class="teachers-grid">
+            <article class="teacher-card">
+              <div class="teacher-photo">
+                <img src="Николас Кредедио.jpg" alt="Николас Кредедио" loading="lazy">
+              </div>
+              <div class="teacher-body">
+                <h4 class="teacher-name">Николас Кредедио</h4>
+                <p class="teacher-country">Аргентина</p>
+                <p class="teacher-desc">Николас — один из самых популярных преподавателей танго в России. Преподавал в школе La Viruta Tango Club. Финалист Campeonato de la Ciudad de Buenos Aires 2017. Работал преподавателем и диджеем в Аргентине, Европе, ОАЭ и России. Обладает уникальным чувствованием музыки танго. Его вдохновителем является Орасио Годой. Судья Чемпионата.</p>
+              </div>
+            </article>
+
+            <article class="teacher-card">
+              <div class="teacher-photo">
+                <img src="Дмитрий Лиферов.jpg" alt="Дмитрий Лиферов" loading="lazy">
+              </div>
+              <div class="teacher-body">
+                <h4 class="teacher-name">Дмитрий Лиферов</h4>
+                <p class="teacher-country">Россия, Пермь</p>
+                <p class="teacher-desc">Более 15 лет изучает и преподаёт танго. Создал собственную систему обучения. Постоянно обучается у аргентинских маэстрос. Трёхкратный финалист Чемпионата Мира 2023–2025. Вице-чемпион Европы 2023–2025. Чемпион России и СНГ. Судья Чемпионата.</p>
+              </div>
+            </article>
+
+            <article class="teacher-card">
+              <div class="teacher-photo">
+                <img src="Григорий Рябцев и Милена Калинина.jpg" alt="Григорий Рябцев и Милена Калинина" loading="lazy">
+              </div>
+              <div class="teacher-body">
+                <h4 class="teacher-name">Григорий Рябцев и Милена Калинина</h4>
+                <p class="teacher-country">Россия, Екатеринбург</p>
+                <p class="teacher-desc">Один из самых ярких молодых дуэтов российского танго. Финалисты Милонги России 2026. Чемпионы Урала 2025. Финалисты TangoTo Cup Russia 2026. Чемпионы Musicality Championship. На субботней милонге представят шоу-выступление.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="school-block">
+          <h3 class="subsection-title">Школа Dance Life</h3>
+          <p class="section-lead">Все мероприятия фестиваля будут проходить в уютных и удобных помещениях Школы танцев Dance Life.</p>
+          <div class="gallery">
+            <img src="school/01.jpg" alt="Школа Dance Life — фото 1" loading="lazy">
+            <img src="school/02.jpg" alt="Школа Dance Life — фото 2" loading="lazy">
+            <img src="school/03.jpg" alt="Школа Dance Life — фото 3" loading="lazy">
+            <img src="school/04.jpg" alt="Школа Dance Life — фото 4" loading="lazy">
+            <img src="school/05.jpg" alt="Школа Dance Life — фото 5" loading="lazy">
+            <img src="school/06.jpg" alt="Школа Dance Life — фото 6" loading="lazy">
+            <img src="school/07.jpg" alt="Школа Dance Life — фото 7" loading="lazy">
+            <img src="school/08.jpg" alt="Школа Dance Life — фото 8" loading="lazy">
+            <img src="school/09.jpg" alt="Школа Dance Life — фото 9" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О Чемпионате -->
+    <section class="section" id="about-championship">
+      <div class="container">
+        <h2 class="section-title">О Чемпионате</h2>
+        <div class="section-text section-text--centered">
+          <p>1 августа 2026 стартует Чемпионат по Аргентинскому Танго от Школы танцев Dance Life.</p>
+          <p>На каждом нашем танго-событии мы стараемся создать праздничную и дружескую атмосферу.</p>
+          <p>Участвовать приглашаются ученики Dance Life, других школ Перми, городов Урала, Сибири и все желающие.</p>
+          <p>В Чемпионате могут принимать участие преподаватели со своими учениками в категории PRO-AM, студенты различных уровней подготовки в категориях AM-AM, а также все желающие в открытых категориях.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section-title">Категории</h2>
+
+        <div class="levels">
+          <h3 class="subsection-title">Уровни</h3>
+          <ul class="levels-list">
+            <li><strong>Beginners</strong> — начинающие: до 1,5 лет</li>
+            <li><strong>Intermediates</strong> — продолжающие: от 1,5 до 3 лет</li>
+            <li><strong>Advanced</strong> — продвинутые: более 3 лет</li>
+          </ul>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-group">
+            <h3 class="subsection-title">AM-AM</h3>
+            <ul class="category-list">
+              <li>Beginners Tango</li>
+              <li>Intermediates Tango</li>
+              <li>Advanced Tango</li>
+              <li>Intermediates Vals</li>
+              <li>Advanced Vals</li>
+              <li>Show Beginners</li>
+              <li>Show Open</li>
+            </ul>
+          </div>
+
+          <div class="category-group">
+            <h3 class="subsection-title">PRO-AM</h3>
+            <ul class="category-list">
+              <li>Beginners Tango</li>
+              <li>Intermediates Tango</li>
+              <li>Advanced Tango</li>
+              <li>Intermediates Vals</li>
+              <li>Advanced Vals</li>
+              <li>Show Beginners</li>
+              <li>Show Open</li>
+            </ul>
+          </div>
+
+          <div class="category-group">
+            <h3 class="subsection-title">Open</h3>
+            <ul class="category-list">
+              <li>Tango</li>
+              <li>Vals</li>
+              <li>Milonguero Solo</li>
+              <li>Carlos Di Sarli</li>
+              <li>Osvaldo Pugliese</li>
+              <li>Juan D'Arienzo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Стоимость -->
+    <section class="section" id="prices">
+      <div class="container">
+        <h2 class="section-title">Стоимость</h2>
+
+        <div class="prices-grid">
+          <article class="price-card">
+            <h3 class="price-card-title">Регистрация</h3>
+            <p class="price-line">3500 руб. до 15 июля</p>
+            <p class="price-line">4900 руб. с 16 июля по 29 июля</p>
+          </article>
+
+          <article class="price-card">
+            <h3 class="price-card-title">Milonguero</h3>
+            <p class="price-line">2500 руб.</p>
+            <p class="price-line">3500 руб.</p>
+          </article>
+        </div>
+
+        <div class="price-lists">
+          <div class="price-group">
+            <h3 class="subsection-title">Мастер-классы</h3>
+            <ul>
+              <li>Мастер-класс Николаса Кредедио — 1900 руб. с человека, 2900 руб. с пары</li>
+              <li>Мастер-класс Григория и Милены — 1500 руб. с человека, 2500 руб. с пары</li>
+              <li>Женские техники Милены — 1500 руб.</li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="subsection-title">Милонга</h3>
+            <ul>
+              <li>Милонга с шоу — 700 руб.</li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="subsection-title">Практики</h3>
+            <ul>
+              <li>Про-практика — 6900 руб.</li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="subsection-title">Индивидуальные уроки</h3>
+            <ul>
+              <li>Николас Кредедио — 8500 руб.</li>
+              <li>Григорий Рябцев — 5900 руб.</li>
+              <li>Милена Калинина — 5900 руб.</li>
+              <li>Дмитрий Лиферов — 7600 руб.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Программа -->
+    <section class="section" id="program">
+      <div class="container">
+        <h2 class="section-title">Программа</h2>
+
+        <div class="program-grid">
+          <article class="program-day">
+            <h3 class="program-date">31 июля</h3>
+            <ul class="program-list">
+              <li>10:00 индивидуальные уроки</li>
+              <li>11:00 индивидуальные уроки</li>
+              <li>12:00 индивидуальные уроки</li>
+              <li>13:00 индивидуальные уроки</li>
+              <li>14:00 индивидуальные уроки</li>
+              <li>15:00 индивидуальные уроки</li>
+              <li>16:00 индивидуальные уроки</li>
+              <li>17:00 индивидуальные уроки</li>
+              <li>18:00 мастер-класс Николаса Кредедио</li>
+              <li>19:00 мастер-класс Григория Рябцева и Милены Калининой</li>
+              <li>20:00 про-практика</li>
+              <li>21:30 про-практика</li>
+            </ul>
+          </article>
+
+          <article class="program-day">
+            <h3 class="program-date">1 августа</h3>
+            <ul class="program-list">
+              <li>13:00–18:00 Чемпионат</li>
+              <li>20:30 Милонга с шоу</li>
+              <li>DJ Николас Кредедио</li>
+            </ul>
+          </article>
+
+          <article class="program-day">
+            <h3 class="program-date">2 августа</h3>
+            <ul class="program-list">
+              <li>13:00 Женские техники</li>
+              <li>10:00–16:00 индивидуальные уроки</li>
+              <li>18:00 про-практика</li>
+              <li>19:30 про-практика</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Положение о Чемпионате -->
+    <section class="section" id="regulations">
+      <div class="container">
+        <h2 class="section-title">Положение о Чемпионате</h2>
+        <div class="regulations-block">
+          <div class="section-text">
+            <p>Чемпионат Dance Life проводится в соответствии с Положением.</p>
+            <p>Чемпионат предполагает участие любителей и смешанных пар.</p>
+            <p>Участники подтверждают согласие с правилами Чемпионата и обработкой персональных данных.</p>
+            <p>Регистрация считается действительной только после оплаты участия.</p>
+            <p>Аккредитация обязательна для всех участников.</p>
+          </div>
+          <a class="btn btn-secondary" href="polozhenie-o-chempionate.pdf" download>Скачать положение (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+
+        <div class="contacts-grid">
+          <article class="contact-card">
+            <h3 class="contact-name">Алёна Писарева</h3>
+            <a class="contact-phone" href="tel:+79617564724">+7 (961) 756-47-24</a>
+          </article>
+
+          <article class="contact-card">
+            <h3 class="contact-name">Ирина Воронова</h3>
+            <a class="contact-phone" href="tel:+79504504490">+7 (950) 450-44-90</a>
+          </article>
+        </div>
+
+        <div class="social-links">
+          <a class="btn btn-secondary" href="https://vk.com/club239757750" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+          <a class="btn btn-secondary" href="https://t.me/dltango" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-main">Dance Life © 2026 · Пермь · Танго не за горами</p>
+      <p class="footer-legal">
+        Регистрируясь на Фестиваль и Чемпионат вы соглашаетесь с
+        <a href="privacy.html">Политикой кониденциальности</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var target = new Date('2026-07-31T10:00:00+05:00').getTime();
+
+      function updateCountdown() {
+        var now = Date.now();
+        var diff = Math.max(0, target - now);
+
+        var days = Math.floor(diff / 86400000);
+        var hours = Math.floor((diff % 86400000) / 3600000);
+        var minutes = Math.floor((diff % 3600000) / 60000);
+        var seconds = Math.floor((diff % 60000) / 1000);
+
+        document.getElementById('cd-days').textContent = String(days);
+        document.getElementById('cd-hours').textContent = String(hours);
+        document.getElementById('cd-minutes').textContent = String(minutes);
+        document.getElementById('cd-seconds').textContent = String(seconds);
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      var toggle = document.querySelector('.menu-toggle');
+      var nav = document.getElementById('main-nav');
+
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      window.addEventListener('scroll', function () {
+        document.body.classList.toggle('is-scrolled', window.scrollY > 40);
+      });
+    })();
+  </script>
+</body>
+</html>

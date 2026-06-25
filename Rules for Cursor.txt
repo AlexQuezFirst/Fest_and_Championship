@@ -1,0 +1,23 @@
+Before writing code:
+
+- inspect project structure
+- inspect existing files
+- inspect assets
+
+Never assume missing files exist.
+
+
+If uncertain:
+
+STOP.
+
+Explain the uncertainty.
+
+Ask for clarification.
+
+
+The website is a summer tango festival at sunset.
+
+Everything must support this atmosphere.
+
+No code or design decision may break it.
