@@ -37,7 +37,9 @@
   --hero-red: #c82323;
   --hero-red-dark: #a61b13;
   --container-max: 1200px;
-  --header-height: 72px;
+  --header-offset-top: 5px;
+  --header-bar-height: 25px;
+  --header-height: 52px;
   --radius-card: 16px;
   --radius-btn: 8px;
   --transition: 0.3s ease;
@@ -88,16 +90,18 @@ a:hover {
 
 .site-header {
   position: absolute;
-  top: 0;
+  top: var(--header-offset-top);
   left: 0;
   right: 0;
   z-index: 3;
-  height: var(--header-height);
-  transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
+  height: var(--header-bar-height);
+  transition: top var(--transition), height var(--transition), background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 
 body.is-scrolled .site-header {
   position: fixed;
+  top: 0;
+  height: var(--header-height);
   z-index: 100;
   background: rgba(24, 17, 14, 0.92);
   backdrop-filter: blur(16px);
@@ -109,10 +113,10 @@ body.is-scrolled .site-header {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  gap: 16px;
-  width: min(100% - 32px, 1400px);
+  gap: 20px;
+  width: min(100% - 24px, 1400px);
   margin-inline: auto;
-  padding-inline: 8px;
+  padding-inline: clamp(8px, 2vw, 32px);
 }
 
 .logo {
@@ -120,18 +124,33 @@ body.is-scrolled .site-header {
   align-items: center;
   flex-shrink: 0;
   color: #ffffff;
+  line-height: 0;
 }
 
 .logo-img {
-  height: 48px;
+  display: block;
+  height: var(--header-bar-height);
   width: auto;
+  max-width: min(36vw, 185px);
+  object-fit: contain;
+  object-position: left center;
+}
+
+body.is-scrolled .logo-img {
+  height: 34px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 6px 18px;
+  align-items: center;
+  gap: 4px 16px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -139,8 +158,9 @@ body.is-scrolled .site-header {
 
 .main-nav a {
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 600;
+  line-height: 1.2;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -954,7 +974,9 @@ body.is-scrolled .site-header {
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 64px;
+    --header-offset-top: 5px;
+    --header-bar-height: 22px;
+    --header-height: 48px;
   }
 
   .menu-toggle {
@@ -963,7 +985,7 @@ body.is-scrolled .site-header {
 
   .main-nav {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-offset-top) + var(--header-bar-height));
     left: 0;
     right: 0;
     padding: 24px;
@@ -992,8 +1014,17 @@ body.is-scrolled .site-header {
     font-size: 0.9rem;
   }
 
+  body.is-scrolled .main-nav {
+    top: var(--header-height);
+  }
+
   .logo-img {
-    height: 40px;
+    height: var(--header-bar-height);
+    max-width: min(58vw, 180px);
+  }
+
+  body.is-scrolled .logo-img {
+    height: 28px;
   }
 
   .hero-overlay {
